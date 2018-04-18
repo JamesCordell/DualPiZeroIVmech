@@ -1,4 +1,6 @@
 #!/usr/bin/python
+import sys
+sys.path.append("./ivport-v2/")
 import RPi.GPIO as GPIO
 import time
 import datetime
@@ -37,9 +39,10 @@ textOverlayCanvas = Image.new("RGB", (704, 60))
 textOverlayPixels = textOverlayCanvas.load()
 
 # Use Roboto font (must be downloaded first)
-font = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Regular.ttf", 20) 
+#font = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Regular.ttf", 20) 
+font = ImageFont.truetype("OCRACondensed.ttf", 15) 
 
-img = Image.open('/root/record704x512.png')
+img = Image.open('./record704x512.png')
 
 #pad = Image.new('RGBA', (
 #((img.size[0] + 31) // 32) * 32,
