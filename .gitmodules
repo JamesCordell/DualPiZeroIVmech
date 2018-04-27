@@ -1,6 +1,3 @@
-[submodule "ivport"]
-	path = ivport
-	url = https://github.com/ivmech/ivport.git
 [submodule "ivport-v2"]
 	path = ivport-v2
 	url = https://github.com/ivmech/ivport-v2.git
